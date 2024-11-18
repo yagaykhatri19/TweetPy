@@ -146,7 +146,7 @@ footer {
 .scroll-box {
   width: 100%;
   max-width: 1800px;
-  height: 200px;
+  height: 300px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -172,7 +172,7 @@ footer {
 }
 
 .side-box {
-  height: 200px;
+  height: 300px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;

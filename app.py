@@ -22,16 +22,16 @@ tfidf_vectorizer = joblib.load('tweet_tfidf_vectorizer.pkl')
 def preprocess_text(text):
     text = text.lower()
     text = re.sub(r"http\S+|www\S+|https\S+", "", text, flags=re.MULTILINE)
-    text = re.sub(r"[^a-z\s]", "", text)
+    text = re.sub(r"[^a-z0-9\s]", "", text)
     words = nltk.word_tokenize(text)
     words = [lemmatizer.lemmatize(word) for word in words if word not in stop_words]
     return " ".join(words)
 
-def get_top_categories(model, vectorizer, input_text, top_n=3):
-    input_tfidf = vectorizer.transform([input_text])
-    probabilities = model.predict_proba(input_tfidf)[0]
-    top_indices = np.argsort(probabilities)[-top_n:][::-1]
-    top_categories = [model.classes_[i] for i in top_indices]
+def get_top_categories(model, vectorizer, input_text, top_n=5):
+    input_tfidf = vectorizer.transform([input_text]) 
+    probabilities = model.predict_proba(input_tfidf)[0]  
+    top_indices = np.argsort(probabilities)[-top_n:][::-1]  
+    top_categories = [(model.classes_[i], probabilities[i]) for i in top_indices]  
     return top_categories
 
 # ENDPOINTS

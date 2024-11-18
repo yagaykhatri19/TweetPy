@@ -11,11 +11,11 @@
     {% if top_categories %}
         <div class="container my-4" style="text-align: center;">
             <h5>Top Categories:</h5>
-            <ol class="side-box">
-                {% for category in top_categories %}
-                    {{ category }}
+            <div>
+                {% for category, prob in top_categories %}
+                    {{ category }} - Probability: {{ prob | round(4) }}<br>
                 {% endfor %}
-            </ol>
+            </div>
         </div>
     {% endif %}
 {% endblock body %}
