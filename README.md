@@ -45,6 +45,41 @@ Make sure you have the following installed on your machine:
 
    ```bash
     python app.py
-    Open your browser and visit http://127.0.0.1:5000/ to see the web application in action.
+
+Open your browser and visit http://127.0.0.1:5000/ to see the web application in action.
+
+### Option 2: Running from a ZIP file
+1. Download and unzip the project files.
+
+2. Navigate to the project folder and create a virtual environment:
+   ```bash
+    python -m venv venv
+    # On Windows
+    venv\Scripts\activate
+    # On Mac/Linux
+    source venv/bin/activate
+
+3. Install the required dependencies using requirements.txt:
+
+   ```bash
+    pip install -r requirements.txt
+
+4. Run the Flask application:
+
+   ```bash
+    python app.py
+
+Open your browser and visit http://127.0.0.1:5000/ to see the web application in action.
+
+## Technologies Used
+Flask: A micro web framework for building the web app.
+Scikit-learn: For machine learning algorithms (Logistic Regression, Naive Bayes, Ensemble Models).
+NLTK: For natural language processing tasks like tokenization, stopword removal, and lemmatization.
+NumPy: For numerical operations.
+Pandas: For data manipulation and preprocessing.
+Joblib: For saving and loading machine learning models.
 
 
+
+
+##### Yagay Khatri
