@@ -80,6 +80,7 @@ Open your browser and visit http://127.0.0.1:5000/ to see the web application in
 - Joblib: For saving and loading machine learning models.
 
 
+---
 
-
-//Yagay Khatri
+**Signed**,  
+Yagay Khatri
