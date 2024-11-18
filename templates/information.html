@@ -1,0 +1,84 @@
+{% extends 'index.html' %} 
+{% block body %}
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(224, 98, 98, 0.1);
+            font-family: 'Arial', sans-serif;
+        }
+
+        h3, h4 {
+            color: #212529;
+        }
+
+        .container p, .container ul {
+            text-align: justify;
+            color: #495057;
+            line-height: 1.6;
+        }
+
+        .container li {
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+        
+        .btn-get-started {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+
+    <div class="container" style="text-align: center;">
+        <h3>What is TweetPy?</h3>
+        <p>
+            Imagine having a tool that understands tweets at a deeper level, sorting them into specific categories like
+            News, Events, Opinions, Deals, and Private Messages. TweetPy is precisely that tool—a smart text classifier 
+            that helps categorize tweets to quickly understand their main purpose.
+        </p>
+        
+        <h4>How Does TweetPy Work?</h4>
+        <p>
+            TweetPy uses machine learning to analyze the content of tweets and automatically assign each tweet to a predefined category. 
+            Here's a quick look at how it operates:
+        </p>
+        <ul>
+            <li><span class="highlight">Data Collection:</span> First, TweetPy is trained on a set of tweets with known categories. This training data helps TweetPy 
+                learn the specific features of each category.</li>
+                
+            <li><span class="highlight">Preprocessing:</span> Next, the tweet text undergoes preprocessing, which includes tasks like 
+                removing unnecessary characters, converting text to lowercase, and tokenizing words. This helps standardize the 
+                data for easier analysis.</li>
+                
+            <li><span class="highlight">Feature Extraction:</span> Then, TweetPy extracts key features from each tweet, 
+                transforming the text into a format that the model can interpret, such as term frequencies or embeddings.</li>
+                
+            <li><span class="highlight">Classification:</span> Using a trained classification model, TweetPy analyzes the processed tweet and assigns 
+                it to one of the categories based on its learned knowledge from the training data.</li>
+                
+            <li><span class="highlight">User Interface:</span> Finally, through an easy-to-use web interface, users can input a tweet, and TweetPy instantly displays the 
+                category for the entered tweet, making the process intuitive and accessible.</li>
+        </ul>
+        
+        <!-- <h4>Ready to Use TweetPy?</h4>
+        <p>
+            Dive in and explore the power of TweetPy to transform how you interpret and categorize tweets. Whether you're 
+            conducting research, managing social media, or just curious about tweet analysis, TweetPy is your go-to 
+            classification companion. Give it a try and see the magic of automated tweet classification in action!
+        </p> -->
+        
+        <a href="/" class="btn-get-started">Get Started</a>
+    </div>
+{% endblock body %}

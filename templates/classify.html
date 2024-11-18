@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block body %}
+    <div class="container my-4" style="text-align: center;">
+        <h4>Your text:</h4>
+        <div class="scroll-box">
+            {{ text }}
+        </div>
+    </div>
+
+    {% if top_categories %}
+        <div class="container my-4" style="text-align: center;">
+            <h5>Top Categories:</h5>
+            <ol class="side-box">
+                {% for category in top_categories %}
+                    {{ category }}
+                {% endfor %}
+            </ol>
+        </div>
+    {% endif %}
+{% endblock body %}

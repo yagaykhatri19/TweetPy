@@ -1,0 +1,83 @@
+{% extends 'index.html' %}
+{% block body %}
+<style>
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #fff;
+}
+
+.about {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between; /* Even spacing between items */
+  width: 100%;
+  padding: 0 50px; /* Adjust padding for more breathing room */
+  gap: 2rem; /* Extra space between each item */
+}
+
+.member {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pic {
+  height: 300px; /* Adjusted for consistent height */
+  width: 300px; /* Adjusted for consistent width */
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.member h5 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.member p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+</style>
+<section class="about-us">
+  <div class="about">
+    <div class="team-members">
+      <!-- First Person -->
+      <div class="member">
+        <img src="{{ url_for('static', filename='person1.jpeg') }}" class="pic" />
+        <h5>Yagay Khatri</h5>
+        <p>2110110605</p>
+      </div>
+
+      <!-- Second Person -->
+      <div class="member">
+        <img src="{{ url_for('static', filename='person2.jpeg') }}" class="pic" />
+        <h5>Tanisha Bashishth</h5>
+        <p>2110110542</p>
+      </div>
+
+      <!-- Third Person -->
+      <div class="member">
+        <img src="{{ url_for('static', filename='person3.jpeg') }}" class="pic" />
+        <h5>Priyansh Singhal</h5>
+        <p>2110110397</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}
