@@ -3,6 +3,8 @@ Imagine having a tool that understands tweets at a deeper level, sorting them in
 
 This project is a tweet classification web application built using Flask, machine learning models, and natural language processing (NLP) techniques.
 
+https://tweetpy.onrender.com/ (Deployed on a free instance - may be slow)
+
 ## Table of Contents
 - [Installation Guide](#installation-guide)
 - [Running the Project](#running-the-project)
