@@ -72,14 +72,14 @@ Open your browser and visit http://127.0.0.1:5000/ to see the web application in
 Open your browser and visit http://127.0.0.1:5000/ to see the web application in action.
 
 ## Technologies Used
-Flask: A micro web framework for building the web app.
-Scikit-learn: For machine learning algorithms (Logistic Regression, Naive Bayes, Ensemble Models).
-NLTK: For natural language processing tasks like tokenization, stopword removal, and lemmatization.
-NumPy: For numerical operations.
-Pandas: For data manipulation and preprocessing.
-Joblib: For saving and loading machine learning models.
+- Flask: A micro web framework for building the web app.
+- Scikit-learn: For machine learning algorithms (Logistic Regression, Naive Bayes, Ensemble Models).
+- NLTK: For natural language processing tasks like tokenization, stopword removal, and lemmatization.
+- NumPy: For numerical operations.
+- Pandas: For data manipulation and preprocessing.
+- Joblib: For saving and loading machine learning models.
 
 
 
 
-##### Yagay Khatri
+//Yagay Khatri
